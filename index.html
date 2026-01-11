@@ -1,216 +1,1087 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAYANK HANGSHOO PORTFOLIO </title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7972082263222296"
-     crossorigin="anonymous"></script>
-  </head>
-  <body>
-     <header class="header">
-       <a href="#" class="logo">Portfolio</a>
 
-       <i class='bx bx-menu' id="menu-icon"></i>
-       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-       </nav>
-     </header>
-     
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Hangshoo | Software Engineer & Full-Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Mayank Hangshoo - Software Engineer with expertise in full-stack development, RESTful APIs, microservices, AWS cloud infrastructure, and CI/CD pipelines.">
+  <meta name="keywords"
+    content="Mayank Hangshoo, Software Engineer, Full Stack Developer, AWS, React, Node.js, Microservices, CI/CD, Portfolio">
+  <meta name="author" content="Mayank Hangshoo">
 
-     <section class="home" id="home">
-     <div class="home-content">
-        <h3>Hello, It's me  </h3>
-        <h1>MAYANK HANGSHOO</h1>
-        <h3>And  I am <span class="multiple-text"></span></h3>
-        <div class="social-media">
-          <a href="https://www.facebook.com/mayur.hangshoo/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-          <a href="#"><i class='bx bxl-twitter'></i></a>
-          <a href="https://instagram.com/mayurhangshoo" target="_blank"><i class='bx bxl-instagram'></i></a>
-          <a href="https://www.linkedin.com/in/mayank-hangshoo-59037522a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank"><i class='bx bxl-linkedin' ></i></a>
-          <a href="https://youtube.com/@mayurhangshoo7920?si=EpFcUwEfFgX70Cg" target="_blank"><i class='bx bxl-youtube'></i></a>
-          <a href="https://github.com/mayank123hangsh00" target="_blank"><i class='bx bxl-github' ></i></a>
-        </div>
-        <a href='#' class="btn-cv-res" >Download CV</a>
-        <a href="https://drive.google.com/file/d/1gj-R_3GUC5BFbKY85o8HGKQOybTk1kvn/view" class="btn-cv-res" target="_blank">Download Resume</a>
-        
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Particle Background -->
+  <div id="particles-container"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">MH</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
       </div>
-      </div>
-      <div class="home-img">
-          <img src="dpmayank.jpg" alt="MY-IMAGE" />
-      </div>
-    </section>
-
-
-
-         <!--About-->    
-    <section class="about" id="about">
-      <div class="about-img">
-      <img src="dpmayank.jpg" alt="MY-IMAGE" />
-
-        </div>
-
-      </div>
-
-    <div class="about-content">
-      <h2 class="heading">About <span>Me</span></h2>
-      <h3>Frontend Developer and Backend developer</h3>
-      <p>As a web development enthusiast, I possess a strong foundation in HTML, CSS, JavaScript. I'm well-versed in database management using MySQL and MongoDB. Staying updated with the latest trends and technologies is my priority, as I actively pursue learning. My passion lies in creating and executing innovative projects that demonstrate my dedication to web development and showcase my skills effectively. </p>
-      <a href="#" class="btn">Read more</a>
+      <p class="loader-text">Loading Experience...</p>
     </div>
-    </section>
+  </div>
 
-    <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">Mayank</span>
+        <span class="logo-dot">.</span>
+      </a>
 
-      <div class="services-container">
-
-        <div class="services-box">
-        <i class='bx bx-code-alt'></i>
-        <h3>Web Developer</h3>
-        <p>As a web developer, I am passionate about designing and developing dynamic and engaging web applications.</p>
-        <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class='bx bxs-rocket'></i>
-          <h3>Project Developer</h3>
-          <p>As a project developer, I transform ideas into reality through innovative solutions and efficient execution. Passionate about delivering successful projects that make a positive impact.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class='bx bxl-youtube'></i>
-          <h3>YouTuber</h3>
-          <p>As a YouTuber , I have more than 15k subscribers with over 1.5M channel views and also managing the youtube channel for college Placement head.</p>
-          <a href="https://www.youtube.com/@Ayushkoul" target="_blank" class="btn">VISIT</a>
-        </div>
-
-        <div class="services-box">
-          <i class='bx bx-code-block'></i>
-          <h3>Competitive Coder</h3>
-          <p>I As a competitive programmer, I am well-versed in using C++ to solve complex algorithmic problems efficiently. </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-          <div class="services-box">
-            <i class='bx bxs-edit-alt'></i>
-            <h3>Video Editor</h3>
-            <p>As a video editor, I have specialization in high-quality,video and reels editing using software like Kinemaster and worked as a video editor for many channels.</p>
-            <a href="https://youtube.com/playlist?list=PLOQJ06m58e5dz9wvwh9fvu6_7PD7RNey7" target="_blank" class="btn">VISIT</a>
-          </div>
-
-          <div class="services-box">
-            <i class='bx bx-data' ></i>
-            <h3>Database Analyst</h3>
-            <p>As a Data Analyst, I have experience in data analysis and querying databases to extract valuable insights. Proficient in MYSQL , Oracle and Mongodb.</p>
-            <a href="#" class="btn">Read More</a>
-            </div>
-
-        </div>
-    </section>
-
-    
-    <!--Portfolio-->   
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-<img src="portfolio6.jpg" alt="PROJECT-IMG" border="0">            <div class="portfolio-layer">
-              <h4>Travel planning Website</h4>
-              <p>Travel planning website [soon to be uploaded]</p>
-              <a href=" https://github.com/mayank123hangsh00/MAJOR-PROJECT"><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="portfolio-box">
-        <img src="portfolio1 (1).jpg" alt="PROJECT-IMG" border="0" />
-            <div class="portfolio-layer">
-              <h4>Landing Page</h4>
-              <p>Landing Page for Show Booking using HTML , CSS & JavaScript </p>
-              <a href="https://ayushkoul2002.github.io/CODSOFT/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="portfolio-box">
-   <img src="portfolio2.jpg" alt="PROJECT-IMG" border="0" />
-            <div class="portfolio-layer">
-              <h4>Website Design</h4>
-              <p>Hi This is my web Design</p>
-              <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="portfolio-box">
-           <img src="portfolio3.jpg" alt="PROJECT-IMG" />
-            <div class="portfolio-layer">
-              <h4>Web Design</h4>
-              <p>Hi This is my web Design</p>
-              <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="portfolio-box">
-         <img src="portfolio4.jpg" alt="PROJECT-IMG" />
-            <div class="portfolio-layer">
-              <h4>Web Design</h4>
-              <p>Hi This is my web Design</p>
-              <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-          <div class="portfolio-box">
-           <img src="portfolio5.jpg" alt="PROJECT-IMG" />
-            <div class="portfolio-layer">
-              <h4>AI Resume Builder</h4>
-              <p>Hi This is my Resume Builder Platform</p>
-              <a href="https://github.com/mayank123hangsh00/AI-RESUME-BUILDER"><i class='bx bx-link-external'></i></a>
-            </div>
-          </div>
-        </div>
-    </section>
-
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
-
-        <div class="input-box">
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email Address">
-        </div>
-
-        <div class="input-box">
-          <input type="Number" placeholder="Mobile Number">
-          <input type="text" placeholder="Email Subject">
-        </div>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn"> 
-
-        </form>
-
-    </section>
-
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy; Mayank hangshoo | All Rights Reserved.</p>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active" data-nav="hero">
+              <span class="nav-link-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-nav="about">
+              <span class="nav-link-text">About</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-nav="skills">
+              <span class="nav-link-text">Skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link" data-nav="services">
+              <span class="nav-link-text">Services</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link" data-nav="portfolio">
+              <span class="nav-link-text">Work</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-nav="contact">
+              <span class="nav-link-text">Contact</span>
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <div class="footer-iconTop">
-        <a href="#home" ><i class='bx bx-up-arrow-alt'></i></a>
+      <div class="nav-actions">
+        <a href="https://drive.google.com/file/d/1tI2QVPiMrfOIgpc1KWwXayLvrMJLdE-J/view?usp=sharing" target="_blank"
+          class="btn btn-primary btn-nav">
+          <span>Resume</span>
+          <i class='bx bx-download'></i>
+        </a>
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">👋</span>
+            <span class="badge-text">Software Engineer | Full-Stack Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">I'm <span class="highlight">Mayank</span></span>
+            <span class="title-line"><span class="highlight">Hangshoo</span></span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span class="subtitle-prefix">I craft</span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Software Engineer with expertise in full-stack development, RESTful APIs, microservices,
+            AWS cloud infrastructure, and CI/CD pipelines. Building scalable, production-grade applications.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn btn-primary btn-lg">
+              <span>Explore My Work</span>
+              <i class='bx bx-right-arrow-alt'></i>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <span>Let's Talk</span>
+              <i class='bx bx-message-rounded-dots'></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="100">0</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">DSA Problems Solved</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="1">0</span>
+              <span class="stat-suffix">+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <div class="hero-image-border"></div>
+            <img src="dpmayank.jpg" alt="Mayank Hangshoo - Developer" class="hero-image">
+            <div class="hero-image-overlay"></div>
+          </div>
+
+          <!-- Floating Elements -->
+          <div class="floating-elements">
+            <div class="floating-card card-1">
+              <i class='bx bxl-aws'></i>
+              <span>AWS</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class='bx bxl-react'></i>
+              <span>React</span>
+            </div>
+            <div class="floating-card card-3">
+              <i class='bx bxl-nodejs'></i>
+              <span>Node.js</span>
+            </div>
+            <div class="floating-card card-4">
+              <i class='bx bxl-docker'></i>
+              <span>Docker</span>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <a href="https://github.com/mayank123hangsh00" target="_blank" class="social-link" aria-label="GitHub">
+              <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mayank-hangshoo-59037522a" target="_blank" class="social-link"
+              aria-label="LinkedIn">
+              <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://instagram.com/mayurhangshoo" target="_blank" class="social-link" aria-label="Instagram">
+              <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://youtube.com/@mayurhangshoo7920" target="_blank" class="social-link" aria-label="YouTube">
+              <i class='bx bxl-youtube'></i>
+            </a>
+          </div>
+        </div>
       </div>
 
-    </footer>  
-    
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"></div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
 
-     <script src="script.js"></script>
-  </body>
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title">
+            About <span class="highlight">Me</span>
+          </h2>
+          <p class="section-subtitle">Crafting digital excellence with passion and precision</p>
+        </div>
+
+        <div class="about-content">
+          <div class="about-image">
+            <div class="about-image-wrapper">
+              <img src="dpmayank.jpg" alt="Mayank Hangshoo">
+              <div class="about-image-decoration"></div>
+            </div>
+            <div class="about-experience-badge">
+              <span class="experience-number">1+</span>
+              <span class="experience-text">Years of Experience</span>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <div class="about-intro">
+              <h3 class="about-heading">
+                Software Engineer & <span class="gradient-text">Full-Stack Developer</span>
+              </h3>
+              <p class="about-description">
+                Software Engineer with hands-on experience in <strong>full-stack development, RESTful API design,
+                  microservices architecture, CI/CD pipelines</strong>, and <strong>AWS cloud infrastructure</strong>.
+              </p>
+              <p class="about-description">
+                Strong foundation in <strong>JavaScript, Java, Python, SQL, OOP, Data Structures</strong>, with
+                practical
+                exposure to Agile SDLC, L1 application support, incident management, and production monitoring.
+                Currently working as Software Engineer at <strong>AiMi Technologies AB</strong>.
+              </p>
+            </div>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class='bx bx-cloud'></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>AWS Cloud</h4>
+                  <p>EC2, ECS, DynamoDB, CloudWatch</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class='bx bx-git-branch'></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>CI/CD & DevOps</h4>
+                  <p>Docker, GitHub Actions, Jenkins</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class='bx bx-bot'></i>
+                </div>
+                <div class="highlight-content">
+                  <h4>AI & LLMs</h4>
+                  <p>Groq API, Gemini, Prompt Engineering</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-primary">
+                <span>Get In Touch</span>
+                <i class='bx bx-right-arrow-alt'></i>
+              </a>
+              <a href="https://drive.google.com/file/d/1tI2QVPiMrfOIgpc1KWwXayLvrMJLdE-J/view?usp=sharing"
+                target="_blank" class="btn btn-ghost">
+                <i class='bx bx-download'></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I Know</span>
+          <h2 class="section-title">
+            My <span class="highlight">Skills</span>
+          </h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class='bx bx-code-alt'></i>
+              Languages & Frameworks
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item" data-skill="90">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript / TypeScript</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="85">
+                <div class="skill-info">
+                  <span class="skill-name">React.js / Next.js</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="85">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js / Express.js</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="80">
+                <div class="skill-info">
+                  <span class="skill-name">Java / Python / C++</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class='bx bx-cloud'></i>
+              Cloud & DevOps
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item" data-skill="85">
+                <div class="skill-info">
+                  <span class="skill-name">AWS (EC2, ECS, DynamoDB)</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="80">
+                <div class="skill-info">
+                  <span class="skill-name">Docker / Linux</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="85">
+                <div class="skill-info">
+                  <span class="skill-name">CI/CD (GitHub Actions, Jenkins)</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="80">
+                <div class="skill-info">
+                  <span class="skill-name">MongoDB / PostgreSQL / SQL</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="category-title">
+              <i class='bx bx-bot'></i>
+              AI & Tools
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item" data-skill="80">
+                <div class="skill-info">
+                  <span class="skill-name">Groq API / Gemini / LLMs</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="85">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub / Jira</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="75">
+                <div class="skill-info">
+                  <span class="skill-name">Jest / Postman / Selenium</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-skill="80">
+                <div class="skill-info">
+                  <span class="skill-name">Cursor / GitHub Copilot</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Tech Stack Icons -->
+      <div class="tech-stack">
+        <h3 class="tech-title">Technologies I Love</h3>
+        <div class="tech-carousel">
+          <div class="tech-track">
+            <div class="tech-item"><i class='bx bxl-html5'></i></div>
+            <div class="tech-item"><i class='bx bxl-css3'></i></div>
+            <div class="tech-item"><i class='bx bxl-javascript'></i></div>
+            <div class="tech-item"><i class='bx bxl-react'></i></div>
+            <div class="tech-item"><i class='bx bxl-nodejs'></i></div>
+            <div class="tech-item"><i class='bx bxl-mongodb'></i></div>
+            <div class="tech-item"><i class='bx bxl-git'></i></div>
+            <div class="tech-item"><i class='bx bxl-github'></i></div>
+            <div class="tech-item"><i class='bx bxl-c-plus-plus'></i></div>
+            <div class="tech-item"><i class='bx bxl-python'></i></div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="tech-item"><i class='bx bxl-html5'></i></div>
+            <div class="tech-item"><i class='bx bxl-css3'></i></div>
+            <div class="tech-item"><i class='bx bxl-javascript'></i></div>
+            <div class="tech-item"><i class='bx bxl-react'></i></div>
+            <div class="tech-item"><i class='bx bxl-nodejs'></i></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">What I Do</span>
+          <h2 class="section-title">
+            My <span class="highlight">Services</span>
+          </h2>
+          <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card featured" data-tilt>
+            <div class="featured-badge">Expert</div>
+            <div class="service-icon">
+              <i class='bx bx-code-alt'></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3 class="service-title">Full-Stack Development</h3>
+            <p class="service-description">
+              Building scalable, production-grade applications using React, Node.js, and modern frameworks.
+            </p>
+            <ul class="service-features">
+              <li><i class='bx bx-check'></i> React.js / Next.js</li>
+              <li><i class='bx bx-check'></i> Node.js / Express.js</li>
+              <li><i class='bx bx-check'></i> RESTful APIs</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt'></i>
+            </a>
+          </article>
+
+          <article class="service-card" data-tilt>
+            <div class="service-icon">
+              <i class='bx bx-server'></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3 class="service-title">API & Microservices</h3>
+            <p class="service-description">
+              Designing and implementing RESTful APIs and microservices for real-time alerting and automation.
+            </p>
+            <ul class="service-features">
+              <li><i class='bx bx-check'></i> Microservices Architecture</li>
+              <li><i class='bx bx-check'></i> API Design & Testing</li>
+              <li><i class='bx bx-check'></i> Scalable Solutions</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt'></i>
+            </a>
+          </article>
+
+          <article class="service-card" data-tilt>
+            <div class="service-icon">
+              <i class='bx bx-cloud'></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3 class="service-title">Cloud & DevOps</h3>
+            <p class="service-description">
+              AWS cloud infrastructure setup, CI/CD pipelines, containerization, and production deployments.
+            </p>
+            <ul class="service-features">
+              <li><i class='bx bx-check'></i> AWS (EC2, ECS, DynamoDB)</li>
+              <li><i class='bx bx-check'></i> Docker / GitHub Actions</li>
+              <li><i class='bx bx-check'></i> CI/CD Pipelines</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt'></i>
+            </a>
+          </article>
+
+          <article class="service-card" data-tilt>
+            <div class="service-icon">
+              <i class='bx bx-bot'></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3 class="service-title">AI & LLM Integration</h3>
+            <p class="service-description">
+              Building AI-powered applications with LLM integration, prompt engineering, and intelligent automation.
+            </p>
+            <ul class="service-features">
+              <li><i class='bx bx-check'></i> Groq API / Gemini</li>
+              <li><i class='bx bx-check'></i> Prompt Engineering</li>
+              <li><i class='bx bx-check'></i> AI Chatbots</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt'></i>
+            </a>
+          </article>
+
+          <article class="service-card" data-tilt>
+            <div class="service-icon">
+              <i class='bx bx-support'></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3 class="service-title">L1 Application Support</h3>
+            <p class="service-description">
+              Incident management, debugging, root cause analysis, and production environment monitoring.
+            </p>
+            <ul class="service-features">
+              <li><i class='bx bx-check'></i> Incident Triage</li>
+              <li><i class='bx bx-check'></i> Debugging & RCA</li>
+              <li><i class='bx bx-check'></i> Production Monitoring</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt'></i>
+            </a>
+          </article>
+
+          <article class="service-card" data-tilt>
+            <div class="service-icon">
+              <i class='bx bx-data'></i>
+              <div class="icon-glow"></div>
+            </div>
+            <h3 class="service-title">Database Management</h3>
+            <p class="service-description">
+              Database design, query optimization, and data analysis using MongoDB, PostgreSQL, and MySQL.
+            </p>
+            <ul class="service-features">
+              <li><i class='bx bx-check'></i> MongoDB / PostgreSQL</li>
+              <li><i class='bx bx-check'></i> Query Optimization</li>
+              <li><i class='bx bx-check'></i> Data Modeling</li>
+            </ul>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <i class='bx bx-right-arrow-alt'></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">
+            Featured <span class="highlight">Projects</span>
+          </h2>
+          <p class="section-subtitle">Explore my latest creations and innovations</p>
+        </div>
+
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="portfolio6.jpg" alt="Travel Planning Website" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <span class="portfolio-category">Web Development</span>
+                  <h3 class="portfolio-title">Travel Planning Website</h3>
+                  <p class="portfolio-description">Full-stack travel planning platform with booking features</p>
+                  <div class="portfolio-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                  </div>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/mayank123hangsh00/MAJOR-PROJECT" target="_blank" class="portfolio-link">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://github.com/mayank123hangsh00/MAJOR-PROJECT" target="_blank" class="portfolio-link">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item featured-project" data-category="web">
+            <div class="portfolio-image">
+              <img src="portfolio1 (1).jpg" alt="Dashboard Assignment" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <span class="portfolio-category">Web Application</span>
+                  <h3 class="portfolio-title">Dashboard Assignment</h3>
+                  <p class="portfolio-description">Enhanced dashboard with dynamic widgets, charts, and search
+                    functionality powered by React and Redux</p>
+                  <div class="portfolio-tech">
+                    <span>React 18</span>
+                    <span>Redux Toolkit</span>
+                    <span>Recharts</span>
+                    <span>Tailwind CSS</span>
+                  </div>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/mayank123hangsh00" target="_blank" class="portfolio-link">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://dashboard-assignment-enhanced.vercel.app/" target="_blank" class="portfolio-link">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item featured-project" data-category="ai">
+            <div class="portfolio-image">
+              <img src="portfolio2.jpg" alt="Discord Copilot" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <span class="portfolio-category">AI / Full-Stack</span>
+                  <h3 class="portfolio-title">Discord Copilot</h3>
+                  <p class="portfolio-description">AI-powered Discord bot with admin console, context-aware
+                    conversations, channel management & robust error handling</p>
+                  <div class="portfolio-tech">
+                    <span>Node.js</span>
+                    <span>Next.js</span>
+                    <span>Supabase</span>
+                    <span>Groq API</span>
+                  </div>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/mayank123hangsh00" target="_blank" class="portfolio-link">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://discord-copilot-vip4.vercel.app/" target="_blank" class="portfolio-link">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item featured-project" data-category="web">
+            <div class="portfolio-image">
+              <img src="portfolio3.jpg" alt="Token Trading Table" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <span class="portfolio-category">Web Application</span>
+                  <h3 class="portfolio-title">Token Trading Table</h3>
+                  <p class="portfolio-description">Real-time token discovery interface with live price updates, advanced
+                    filtering, and responsive design</p>
+                  <div class="portfolio-tech">
+                    <span>Next.js 14</span>
+                    <span>TypeScript</span>
+                    <span>Redux Toolkit</span>
+                    <span>Tailwind CSS</span>
+                  </div>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/mayank123hangsh00" target="_blank" class="portfolio-link">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://token-trading-table-snowy.vercel.app/" target="_blank" class="portfolio-link">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item featured-project" data-category="web">
+            <div class="portfolio-image">
+              <img src="portfolio4.jpg" alt="DevOps CI/CD Sample" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <span class="portfolio-category">DevOps / CI/CD</span>
+                  <h3 class="portfolio-title">DevOps CI/CD Sample Repo</h3>
+                  <p class="portfolio-description">Complete CI/CD pipeline implementation with automated testing,
+                    deployment, and Docker containerization</p>
+                  <div class="portfolio-tech">
+                    <span>GitHub Actions</span>
+                    <span>Docker</span>
+                    <span>CI/CD</span>
+                    <span>DevOps</span>
+                  </div>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/mayank123hangsh00/devops-ci-cd-sample-repo" target="_blank"
+                      class="portfolio-link">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://github.com/mayank123hangsh00/devops-ci-cd-sample-repo" target="_blank"
+                      class="portfolio-link">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-item featured-project" data-category="ai">
+            <div class="portfolio-image">
+              <img src="portfolio5.jpg" alt="AI Resume Builder" loading="lazy">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <span class="portfolio-category">AI / Machine Learning</span>
+                  <h3 class="portfolio-title">AI Resume Builder</h3>
+                  <p class="portfolio-description">Intelligent resume building platform powered by AI</p>
+                  <div class="portfolio-tech">
+                    <span>React</span>
+                    <span>AI/ML</span>
+                    <span>Node.js</span>
+                  </div>
+                  <div class="portfolio-links">
+                    <a href="https://github.com/mayank123hangsh00/AI-RESUME-BUILDER" target="_blank"
+                      class="portfolio-link">
+                      <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://github.com/mayank123hangsh00/AI-RESUME-BUILDER" target="_blank"
+                      class="portfolio-link">
+                      <i class='bx bx-link-external'></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-cta">
+          <a href="https://github.com/mayank123hangsh00" target="_blank" class="btn btn-outline btn-lg">
+            <span>View All Projects on GitHub</span>
+            <i class='bx bxl-github'></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (Optional Enhancement) -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Feedback</span>
+          <h2 class="section-title">
+            What People <span class="highlight">Say</span>
+          </h2>
+          <p class="section-subtitle">Trusted by clients and collaborators</p>
+        </div>
+
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <p class="testimonial-text">
+              "Mayank is an exceptional developer with a keen eye for detail. His work on our project exceeded all
+              expectations. Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>JD</span>
+              </div>
+              <div class="author-info">
+                <h4>John Doe</h4>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <p class="testimonial-text">
+              "Working with Mayank was a pleasure. He delivered our web application on time with impressive quality.
+              Great communication throughout!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>SK</span>
+              </div>
+              <div class="author-info">
+                <h4>Sarah Kim</h4>
+                <span>Startup Founder</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote">
+              <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            <p class="testimonial-text">
+              "Mayank's YouTube tutorials helped me understand complex concepts easily. His content is engaging and
+              educational. Keep up the great work!"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <span>AR</span>
+              </div>
+              <div class="author-info">
+                <h4>Alex Rodriguez</h4>
+                <span>Student Developer</span>
+              </div>
+            </div>
+            <div class="testimonial-rating">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half'></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">
+            Let's <span class="highlight">Connect</span>
+          </h2>
+          <p class="section-subtitle">Have a project in mind? Let's create something amazing together</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class='bx bx-envelope'></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Me</h4>
+                <p>mayurhangshoo@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class='bx bx-phone'></i>
+              </div>
+              <div class="contact-details">
+                <h4>Call Me</h4>
+                <p>+91 9682590112</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class='bx bx-map'></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Pune, India</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class='bx bx-globe'></i>
+              </div>
+              <div class="contact-details">
+                <h4>Connect Online</h4>
+                <div class="contact-socials">
+                  <a href="https://github.com/mayank123hangsh00" target="_blank"><i class='bx bxl-github'></i></a>
+                  <a href="https://www.linkedin.com/in/mayank-hangshoo-59037522a" target="_blank"><i
+                      class='bx bxl-linkedin'></i></a>
+                  <a href="https://instagram.com/mayurhangshoo" target="_blank"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://youtube.com/@mayurhangshoo7920" target="_blank"><i class='bx bxl-youtube'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                <span class="form-highlight"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                <span class="form-highlight"></span>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 234 567 890">
+                <span class="form-highlight"></span>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Discussion"
+                  required>
+                <span class="form-highlight"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..."
+                rows="5" required></textarea>
+              <span class="form-highlight"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <span>Send Message</span>
+              <i class='bx bx-send'></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <span class="logo-text">Mayank</span>
+            <span class="logo-dot">.</span>
+          </a>
+          <p class="footer-description">
+            Crafting digital experiences that inspire and innovate. Let's build something amazing together.
+          </p>
+          <div class="footer-socials">
+            <a href="https://github.com/mayank123hangsh00" target="_blank" aria-label="GitHub"><i
+                class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/mayank-hangshoo-59037522a" target="_blank" aria-label="LinkedIn"><i
+                class='bx bxl-linkedin'></i></a>
+            <a href="https://instagram.com/mayurhangshoo" target="_blank" aria-label="Instagram"><i
+                class='bx bxl-instagram'></i></a>
+            <a href="https://youtube.com/@mayurhangshoo7920" target="_blank" aria-label="YouTube"><i
+                class='bx bxl-youtube'></i></a>
+            <a href="https://www.facebook.com/mayur.hangshoo/" target="_blank" aria-label="Facebook"><i
+                class='bx bxl-facebook'></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>More</h4>
+            <ul>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="https://drive.google.com/file/d/1tI2QVPiMrfOIgpc1KWwXayLvrMJLdE-J/view?usp=sharing"
+                  target="_blank">Resume</a></li>
+              <li><a href="https://github.com/mayank123hangsh00" target="_blank">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 Mayank Hangshoo. All rights reserved.
+        </p>
+        <p class="footer-credit">
+          Designed & Built with <span class="heart">❤️</span> by Mayank
+        </p>
+      </div>
+    </div>
+
+    <a href="#hero" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+      <i class='bx bx-up-arrow-alt'></i>
+    </a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
